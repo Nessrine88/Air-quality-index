@@ -1,0 +1,90 @@
+.container {
+  margin: auto;
+  background-color: #ec4c8a;
+  padding: 2rem 0;
+}
+
+.container h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.container button {
+  box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  margin: 1rem 0;
+  padding: 0 0.5rem;
+  border-radius: 5px;
+  z-index: -1;
+  background-color: transparent;
+  color: yellow;
+}
+
+.container button:hover {
+  background-color: #8d2e53;
+}
+
+.aqi-description {
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.aqi-1 {
+  color: green;
+}
+
+.aqi-2 {
+  color: yellow;
+}
+
+.aqi-3 {
+  color: orange;
+}
+
+.aqi-4 {
+  color: red;
+}
+
+.aqi-5 {
+  color: purple;
+}
+
+.componentsList li {
+  list-style: none;
+  padding: 2rem 1rem;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.componentsList li:hover {
+  background-color: #cf4378;
+}
+
+.componentsList li:nth-child(odd) {
+  background-color: #cf4378;
+}
+
+.componentsList li:nth-child(even) {
+  background-color: #e94b88;
+}
+
+.componentsList li:nth-child(even):hover {
+  background-color: rgba(160, 2, 99, 0.6);
+}
+
+.componentsList li:nth-child(odd):hover {
+  background-color: rgba(160, 2, 99, 0.6);
+}
+
+.componentsList {
+  padding: 0;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
