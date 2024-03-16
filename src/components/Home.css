@@ -3,9 +3,13 @@
   grid-template-columns: repeat(2, 50%);
   width: 100%;
   place-self: center;
-  padding: 0;
 }
 
+.gridList {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
 .gridList .gridListItem {
   display: flex;
   flex-direction: column;
@@ -34,13 +38,14 @@
 
 .gridList button {
   box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.2);
+  font-size: 20px;
   border: none;
   margin: 2rem 0;
   padding: 0 0.5rem;
   border-radius: 5px;
   z-index: -1;
   background-color: transparent;
-  color: yellow;
+  color: #62f805;
 }
 
 .gridList button:hover {
@@ -71,7 +76,10 @@
 
 .homeContainer h2 {
   color: #fff;
-  font-size: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .homeContainer input {
@@ -118,7 +126,7 @@
 }
 
 .principal {
-  background-image: url('../assets/airQTn.png');
+  background-image: url('../assets/tunisa.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
