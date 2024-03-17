@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 const apiKey = '25db9cb405c77623f4730d817d5c97ba';
-const baseUrl = 'http://api.openweathermap.org/data/2.5/air_pollution?';
+const baseUrl = 'https://api.openweathermap.org/data/2.5/air_pollution?';
 export const fetchDetails = createAsyncThunk('details/fetchDetails', async ({ lat, lon }) => {
   try {
     const response = await axios.get(`${baseUrl}lat=${lat}&lon=${lon}&appid=${apiKey}`);
