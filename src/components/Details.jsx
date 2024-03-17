@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useLocation } from 'react-router-dom';
 import { fetchDetails } from '../Redux/detailsSlice';
 import loading from '../assets/loading.gif';
+import index from '../assets/index.png'
 import './Details.css';
 
 function Details() {
@@ -36,6 +37,9 @@ function Details() {
     <div className="container">
       {data1 ? (
         <div>
+          <div className="cloud">
+         <img src={index} alt="" />
+         </div>
           <h2>
             {countryName}
           </h2>
@@ -49,7 +53,6 @@ function Details() {
             {' '}
             {getAQIDescription(data1.list[0].main.aqi)}
           </p>
-          <h2>Components:</h2>
           <ul className="componentsList">
             {Object.keys(data1.list[0].components).map((key) => (
               <li key={key}>

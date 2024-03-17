@@ -1,14 +1,21 @@
 .container {
   margin: auto;
-  background-color: #ec4c8a;
+  background-color: #ff1D58;
   padding: 2rem 0;
 }
 
 .container h2 {
+  font-size: 2rem;
   color: #fff;
   text-align: center;
+  margin: 2rem;
 }
-
+.container h3{
+  font-size: 3rem;
+  color: #fff;
+  margin-left: 1rem;
+  text-align: center;
+}
 .container button {
   box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.2);
   border: none;
@@ -22,6 +29,16 @@
 
 .container button:hover {
   background-color: #8d2e53;
+}
+.cloud {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.container img {
+  text-align: center;
+  width: 300px;
+  height: 200px;
 }
 
 .aqi-description {
@@ -64,11 +81,11 @@
 }
 
 .componentsList li:nth-child(odd) {
-  background-color: #cf4378;
+  background-color: #ff1D58 ;
 }
 
 .componentsList li:nth-child(even) {
-  background-color: #e94b88;
+  background-color: #f75990;
 }
 
 .componentsList li:nth-child(even):hover {

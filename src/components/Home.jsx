@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchCountries } from '../Redux/homeSlice';
 import position from '../assets/location.png';
+import airIndex from '../assets/measure.png'
 import './Home.css';
 
 function Home() {
@@ -35,6 +36,7 @@ function Home() {
     <div className="homeContainer">
       <div className="principal">
         <h2>Air Quality Index In Tunisia</h2>
+        <img src={airIndex} alt="" />
       </div>
       <input
         type="text"
@@ -42,7 +44,6 @@ function Home() {
         value={filter}
         onChange={(e) => setFilter(e.target.value)}
       />
-      <h2>Tunisia States</h2>
       <div className="gridList">
         {filteredCountries.length > 0 ? (
           filteredCountries.map((country, index) => (
@@ -54,9 +55,10 @@ function Home() {
               }`}
             >
               <span>{country.name}</span>
-              <div className="colorCircle" style={{ backgroundColor: getAQIDescription(country.aqi) }} />
               <div className="position">
+                <div>
                 <img src={position} alt="" />
+                </div>
                 <br />
                 Latitude :
                 {' '}

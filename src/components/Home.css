@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 50%);
   width: 100%;
   place-self: center;
+  padding: 2rem;
 }
 
 .gridList {
@@ -22,7 +23,7 @@
 }
 
 .gridList li:hover {
-  background-color: #f80562;
+  background-color: #f75990;
 }
 
 .gridList a {
@@ -37,19 +38,20 @@
 }
 
 .gridList button {
-  box-shadow: 2px 0 5px 0 rgba(0, 0, 0, 0.2);
-  font-size: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: bold;
   border: none;
   margin: 2rem 0;
-  padding: 0 0.5rem;
-  border-radius: 5px;
-  z-index: -1;
-  background-color: transparent;
-  color: #62f805;
+  padding: 1rem;
+  line-height: 4px;
+  background-color: #a5f73a;
+  color: #b40009;
+  border-radius: 10px;
 }
 
 .gridList button:hover {
-  background-color: #8d2e53;
+  background-color: #ff1D58;
 }
 
 .position img {
@@ -69,7 +71,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ec4c8a;
+  background-color: #ff1D58;
   padding-top: 1rem;
   position: relative;
 }
@@ -85,7 +87,7 @@
 .homeContainer input {
   padding: 1rem 0.5rem;
   margin: 1rem;
-  width: 95%;
+  width: 90%;
   border: none;
   border-radius: 5px;
 }
@@ -96,28 +98,28 @@
   gap: 3rem;
   padding: 4rem 0.8rem;
   align-items: center;
-  border: #54003e solid 1px;
+  border: #ff1D58 solid 1px;
 }
 
 .split h2 {
-  color: #fff;
+  color: #004987;
   font-size: 2rem;
 }
 
 .gridList .gridListItem.even {
-  background-color: #cf4378;
+  background-color: #f75990;
 }
 
 .gridList .gridListItem.odd {
-  background-color: #e94b88;
+  background-color: #ff1D58 ;
 }
 
 .gridList .gridListItem.odd:hover {
-  background-color: rgba(160, 2, 99, 0.6);
+  background-color: #ff1D58;
 }
 
 .gridList .gridListItem.even:hover {
-  background-color: rgba(160, 2, 99, 0.6);
+  background-color: #ff1D58;
 }
 
 .position {
@@ -126,22 +128,27 @@
 }
 
 .principal {
-  background-image: url('../assets/tunisa.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 96%;
   height: 150%;
-  background-color: #54003e;
+  background-color: #ff1D58;
   z-index: 1;
+}
+.principal img {
+  width: 250px;
+  height: 150px;
+  padding: 0;
 }
 
 .principal h2 {
   color: #fff;
   text-align: center;
-  background-color: rgba(160, 2, 99, 0.6);
+  background-color: #ff1D58;
   margin: 0;
-  padding: 6.5rem 0;
+  padding: 4rem 0 2.5rem 0 ;
 }
 
 @media screen and (max-width: 576px) {
@@ -154,10 +161,21 @@
   }
 
   .gridList .gridListItem:nth-child(odd) {
-    background-color: #cf4378 !important;
+    background-color: #ff1D58 !important;
   }
 
   .gridList .gridListItem:nth-child(even) {
-    background-color: #e94b88 !important;
+    background-color: #f75990 !important;
   }
+}
+
+.airIcon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.airIcon img {
+background-color: #f75990;
 }
