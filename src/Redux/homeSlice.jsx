@@ -26,7 +26,7 @@ const state = [
   'Sidi Bouzid',
 ];
 
-const baseUrl = 'http://api.openweathermap.org/geo/1.0/direct?';
+const baseUrl = 'https://api.openweathermap.org/geo/1.0/direct?';
 const apiKey = '25db9cb405c77623f4730d817d5c97ba';
 export const fetchCountries = createAsyncThunk('countries/fetchCountries', async () => {
   try {
